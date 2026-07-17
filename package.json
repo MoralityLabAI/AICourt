@@ -1,0 +1,29 @@
+{
+  "name": "aicourt-strategy-corpus",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/MoralityLabAI/AICourt.git",
+  "description": "Unified strategy-disposition corpus tooling and the Court intrigue environment.",
+  "scripts": {
+    "test": "node --test test",
+    "generate:court": "node scripts/generate_court.mjs",
+    "balance:court": "node scripts/balance_court.mjs --episodes 200 --seed court-balance-v2 --out results/court-balance-200.json",
+    "balance:court:ensemble": "node scripts/balance_court_ensemble.mjs --cohorts 10 --episodes 200 --seed court-balance-v2 --out results/court-balance-ensemble-2000.json",
+    "adapt:centauri": "node scripts/adapt_corpus.mjs --env centauri",
+    "adapt:they-sing": "node scripts/adapt_corpus.mjs --env they_sing",
+    "validate:corpus": "python validate_corpus.py",
+    "campaign:plan": "node scripts/mixed_corpus_campaign.mjs plan",
+    "campaign:legacy": "node scripts/mixed_corpus_campaign.mjs import-legacy",
+    "campaign:status": "node scripts/mixed_corpus_campaign.mjs status",
+    "campaign:pilot": "node scripts/mixed_corpus_campaign.mjs pilot",
+    "campaign:run": "node scripts/mixed_corpus_campaign.mjs run",
+    "viewer:sample": "node scripts/export_viewer_sample.mjs",
+    "viewer:dev": "node scripts/run_viewer.mjs dev",
+    "viewer:build": "node scripts/run_viewer.mjs build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

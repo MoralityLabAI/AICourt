@@ -1,0 +1,242 @@
+{
+  "schema": "court.balance.v1",
+  "policy_population": "seeded deterministic heuristic policy",
+  "evidence_scope": "mechanics balance; not model-agent strategic quality",
+  "env_version": "1.2.0",
+  "generated_at": "2026-07-17T22:48:04.545Z",
+  "seed": "court-balance-v2",
+  "episodes": 200,
+  "disposition_assignment": "cyclic 50/50 by seat; archetypes use a four-episode Latin schedule for exact disposition balance across rotating 5/6/7 seat counts",
+  "win_rate_by_disposition": {
+    "machiavellian": {
+      "appearances": 600,
+      "winning_seats": 283,
+      "normalized_victory_credit": 95.1333,
+      "seat_win_rate": 0.4717,
+      "share_of_victory_credit": 0.4757
+    },
+    "coalition": {
+      "appearances": 599,
+      "winning_seats": 320,
+      "normalized_victory_credit": 104.8667,
+      "seat_win_rate": 0.5342,
+      "share_of_victory_credit": 0.5243
+    }
+  },
+  "win_rate_by_role": {
+    "monarch": {
+      "appearances": 200,
+      "wins": 122,
+      "win_rate": 0.61
+    },
+    "heir": {
+      "appearances": 200,
+      "wins": 138,
+      "win_rate": 0.69
+    },
+    "rival": {
+      "appearances": 200,
+      "wins": 62,
+      "win_rate": 0.31
+    },
+    "spymaster": {
+      "appearances": 109,
+      "wins": 43,
+      "win_rate": 0.3945
+    },
+    "foreign_envoy": {
+      "appearances": 123,
+      "wins": 69,
+      "win_rate": 0.561
+    },
+    "high_priest": {
+      "appearances": 127,
+      "wins": 79,
+      "win_rate": 0.622
+    },
+    "master_of_coin": {
+      "appearances": 119,
+      "wins": 43,
+      "win_rate": 0.3613
+    },
+    "lover": {
+      "appearances": 121,
+      "wins": 47,
+      "win_rate": 0.3884
+    }
+  },
+  "archetype_results": {
+    "broker": {
+      "appearances": 200,
+      "objective_successes": 91,
+      "role_wins": 91,
+      "objective_success_rate": 0.455,
+      "role_win_rate": 0.455
+    },
+    "guarantor": {
+      "appearances": 200,
+      "objective_successes": 50,
+      "role_wins": 77,
+      "objective_success_rate": 0.25,
+      "role_win_rate": 0.385
+    },
+    "auditor": {
+      "appearances": 200,
+      "objective_successes": 116,
+      "role_wins": 109,
+      "objective_success_rate": 0.58,
+      "role_win_rate": 0.545
+    },
+    "veto_holder": {
+      "appearances": 200,
+      "objective_successes": 163,
+      "role_wins": 106,
+      "objective_success_rate": 0.815,
+      "role_win_rate": 0.53
+    }
+  },
+  "archetype_x_role_coverage": {
+    "monarch": {
+      "broker": 42,
+      "guarantor": 43,
+      "veto_holder": 25,
+      "auditor": 24
+    },
+    "heir": {
+      "guarantor": 34,
+      "broker": 33,
+      "veto_holder": 34,
+      "auditor": 50
+    },
+    "spymaster": {
+      "auditor": 17,
+      "veto_holder": 26,
+      "broker": 18,
+      "guarantor": 14
+    },
+    "foreign_envoy": {
+      "veto_holder": 20,
+      "auditor": 15,
+      "broker": 19,
+      "guarantor": 21
+    },
+    "rival": {
+      "auditor": 42,
+      "broker": 25,
+      "veto_holder": 25,
+      "guarantor": 25
+    },
+    "lover": {
+      "veto_holder": 21,
+      "broker": 20,
+      "guarantor": 28,
+      "auditor": 16
+    },
+    "high_priest": {
+      "auditor": 19,
+      "veto_holder": 21,
+      "guarantor": 17,
+      "broker": 25
+    },
+    "master_of_coin": {
+      "guarantor": 18,
+      "broker": 18,
+      "auditor": 17,
+      "veto_holder": 28
+    }
+  },
+  "disposition_x_archetype_coverage": {
+    "broker": {
+      "machiavellian": 100,
+      "coalition": 100,
+      "neutral": 0
+    },
+    "guarantor": {
+      "machiavellian": 100,
+      "coalition": 100,
+      "neutral": 0
+    },
+    "auditor": {
+      "machiavellian": 100,
+      "coalition": 100,
+      "neutral": 0
+    },
+    "veto_holder": {
+      "machiavellian": 100,
+      "coalition": 100,
+      "neutral": 0
+    }
+  },
+  "archetype_action_events": {
+    "broker_compact": 486,
+    "spread_rumor": 212,
+    "guarantee_commitment": 800,
+    "accept_compact": 477,
+    "audit_rumor": 173,
+    "rumor_verdict": 173,
+    "veto_candidate": 380,
+    "compact_expired": 330,
+    "override_veto": 343,
+    "guarantee_settled": 767,
+    "veto_expired": 360,
+    "compact_activated": 117,
+    "veto_overridden": 84
+  },
+  "disposition_x_role_coverage": {
+    "monarch": {
+      "machiavellian": 100,
+      "coalition": 100,
+      "neutral": 0
+    },
+    "heir": {
+      "machiavellian": 100,
+      "coalition": 100,
+      "neutral": 0
+    },
+    "rival": {
+      "machiavellian": 100,
+      "coalition": 100,
+      "neutral": 0
+    },
+    "spymaster": {
+      "machiavellian": 51,
+      "coalition": 58,
+      "neutral": 0
+    },
+    "foreign_envoy": {
+      "machiavellian": 60,
+      "coalition": 63,
+      "neutral": 0
+    },
+    "high_priest": {
+      "machiavellian": 67,
+      "coalition": 60,
+      "neutral": 0
+    },
+    "master_of_coin": {
+      "machiavellian": 69,
+      "coalition": 50,
+      "neutral": 0
+    },
+    "lover": {
+      "machiavellian": 53,
+      "coalition": 68,
+      "neutral": 0
+    }
+  },
+  "commitments": {
+    "made_total": 16392,
+    "broken_total": 2935,
+    "made_per_episode": 81.96,
+    "broken_per_episode": 14.675,
+    "broken_rate": 0.1791,
+    "target_band": [
+      0.15,
+      0.4
+    ]
+  },
+  "mean_episode_turn_records": 12.845,
+  "mean_episode_length_tokens": 18572.07,
+  "token_counter": "tiktoken cl100k_base over each serialized one-line episode",
+  "balance_target_passed": true
+}

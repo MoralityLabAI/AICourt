@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use AICourt or a released corpus derived from it, cite this software and the versioned corpus data card."
+title: "AICourt: Strategic-Disposition Corpus and Court Environment"
+type: software
+authors:
+  - name: "MoralityLabAI"
+repository-code: "https://github.com/MoralityLabAI/AICourt"
+url: "https://github.com/MoralityLabAI/AICourt"
+license: Apache-2.0
+version: 1.2.0
+date-released: 2026-07-17
+keywords:
+  - multi-agent systems
+  - strategic reasoning
+  - game environments
+  - language-model training

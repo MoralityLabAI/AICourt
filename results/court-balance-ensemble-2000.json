@@ -1,0 +1,1194 @@
+{
+  "schema": "court.balance.ensemble.v1",
+  "generated_at": "2026-07-17T22:49:01.106Z",
+  "policy_population": "seeded deterministic heuristic policy",
+  "evidence_scope": "mechanics balance; not model-agent strategic quality",
+  "env_version": "1.2.0",
+  "seed_prefix": "court-balance-v2",
+  "cohorts": 10,
+  "episodes_per_cohort": 200,
+  "total_episodes": 2000,
+  "aggregate": {
+    "seed": "court-balance-v2",
+    "episodes": 2000,
+    "win_rate_by_disposition": {
+      "machiavellian": {
+        "appearances": 6000,
+        "winning_seats": 2959,
+        "seat_win_rate": 0.4932,
+        "normalized_victory_credit": 967.5167,
+        "share_of_victory_credit": 0.4838
+      },
+      "coalition": {
+        "appearances": 5990,
+        "winning_seats": 3152,
+        "seat_win_rate": 0.5262,
+        "normalized_victory_credit": 1032.4833,
+        "share_of_victory_credit": 0.5162
+      }
+    },
+    "win_rate_by_role": {
+      "monarch": {
+        "appearances": 2000,
+        "wins": 1215,
+        "win_rate": 0.6075
+      },
+      "heir": {
+        "appearances": 2000,
+        "wins": 1350,
+        "win_rate": 0.675
+      },
+      "rival": {
+        "appearances": 2000,
+        "wins": 650,
+        "win_rate": 0.325
+      },
+      "master_of_coin": {
+        "appearances": 1180,
+        "wins": 424,
+        "win_rate": 0.3593
+      },
+      "foreign_envoy": {
+        "appearances": 1183,
+        "wins": 694,
+        "win_rate": 0.5866
+      },
+      "spymaster": {
+        "appearances": 1201,
+        "wins": 510,
+        "win_rate": 0.4246
+      },
+      "lover": {
+        "appearances": 1186,
+        "wins": 503,
+        "win_rate": 0.4241
+      },
+      "high_priest": {
+        "appearances": 1240,
+        "wins": 765,
+        "win_rate": 0.6169
+      }
+    },
+    "archetype_results": {
+      "broker": {
+        "appearances": 2000,
+        "objective_successes": 739,
+        "role_wins": 919,
+        "objective_success_rate": 0.3695,
+        "role_win_rate": 0.4595
+      },
+      "guarantor": {
+        "appearances": 2000,
+        "objective_successes": 466,
+        "role_wins": 889,
+        "objective_success_rate": 0.233,
+        "role_win_rate": 0.4445
+      },
+      "auditor": {
+        "appearances": 2000,
+        "objective_successes": 1267,
+        "role_wins": 1124,
+        "objective_success_rate": 0.6335,
+        "role_win_rate": 0.562
+      },
+      "veto_holder": {
+        "appearances": 2000,
+        "objective_successes": 1568,
+        "role_wins": 1091,
+        "objective_success_rate": 0.784,
+        "role_win_rate": 0.5455
+      }
+    },
+    "commitments": {
+      "made_total": 167006,
+      "broken_total": 29694,
+      "made_per_episode": 83.503,
+      "broken_per_episode": 14.847,
+      "broken_rate": 0.1778,
+      "target_band": [
+        0.15,
+        0.4
+      ]
+    },
+    "mean_episode_turn_records": 12.9555,
+    "mean_episode_length_tokens": 18822.8245,
+    "role_win_rate_range": 0.35
+  },
+  "seed_sensitivity": {
+    "break_rate": {
+      "mean": 0.1778,
+      "sample_sd": 0.0036,
+      "minimum": 0.1716,
+      "maximum": 0.1823,
+      "cohort_mean_ci95": [
+        0.1752,
+        0.1804
+      ]
+    },
+    "cohorts_passing_break_band": 10,
+    "cohorts_passing_disposition_gate": 10,
+    "robust_gate_passed": true
+  },
+  "cohort_results": [
+    {
+      "cohort_index": 0,
+      "seed": "court-balance-v2:cohort-0",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 308,
+          "seat_win_rate": 0.5133,
+          "normalized_victory_credit": 100.8667,
+          "share_of_victory_credit": 0.5043
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 298,
+          "seat_win_rate": 0.4975,
+          "normalized_victory_credit": 99.1333,
+          "share_of_victory_credit": 0.4957
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 126,
+          "win_rate": 0.63
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 133,
+          "win_rate": 0.665
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 67,
+          "win_rate": 0.335
+        },
+        "master_of_coin": {
+          "appearances": 120,
+          "wins": 40,
+          "win_rate": 0.3333
+        },
+        "foreign_envoy": {
+          "appearances": 120,
+          "wins": 80,
+          "win_rate": 0.6667
+        },
+        "spymaster": {
+          "appearances": 119,
+          "wins": 42,
+          "win_rate": 0.3529
+        },
+        "lover": {
+          "appearances": 130,
+          "wins": 46,
+          "win_rate": 0.3538
+        },
+        "high_priest": {
+          "appearances": 110,
+          "wins": 72,
+          "win_rate": 0.6545
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 80,
+          "role_wins": 87,
+          "objective_success_rate": 0.4,
+          "role_win_rate": 0.435
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 35,
+          "role_wins": 85,
+          "objective_success_rate": 0.175,
+          "role_win_rate": 0.425
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 125,
+          "role_wins": 128,
+          "objective_success_rate": 0.625,
+          "role_win_rate": 0.64
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 162,
+          "role_wins": 110,
+          "objective_success_rate": 0.81,
+          "role_win_rate": 0.55
+        }
+      },
+      "commitments": {
+        "made_total": 16540,
+        "broken_total": 2938,
+        "made_per_episode": 82.7,
+        "broken_per_episode": 14.69,
+        "broken_rate": 0.1776,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 12.775,
+      "mean_episode_length_tokens": 18651.66
+    },
+    {
+      "cohort_index": 1,
+      "seed": "court-balance-v2:cohort-1",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 278,
+          "seat_win_rate": 0.4633,
+          "normalized_victory_credit": 92.3333,
+          "share_of_victory_credit": 0.4617
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 317,
+          "seat_win_rate": 0.5292,
+          "normalized_victory_credit": 107.6667,
+          "share_of_victory_credit": 0.5383
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 116,
+          "win_rate": 0.58
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 140,
+          "win_rate": 0.7
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 60,
+          "win_rate": 0.3
+        },
+        "master_of_coin": {
+          "appearances": 120,
+          "wins": 52,
+          "win_rate": 0.4333
+        },
+        "high_priest": {
+          "appearances": 123,
+          "wins": 75,
+          "win_rate": 0.6098
+        },
+        "lover": {
+          "appearances": 117,
+          "wins": 46,
+          "win_rate": 0.3932
+        },
+        "spymaster": {
+          "appearances": 126,
+          "wins": 49,
+          "win_rate": 0.3889
+        },
+        "foreign_envoy": {
+          "appearances": 113,
+          "wins": 57,
+          "win_rate": 0.5044
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 74,
+          "role_wins": 101,
+          "objective_success_rate": 0.37,
+          "role_win_rate": 0.505
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 49,
+          "role_wins": 84,
+          "objective_success_rate": 0.245,
+          "role_win_rate": 0.42
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 137,
+          "role_wins": 102,
+          "objective_success_rate": 0.685,
+          "role_win_rate": 0.51
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 155,
+          "role_wins": 113,
+          "objective_success_rate": 0.775,
+          "role_win_rate": 0.565
+        }
+      },
+      "commitments": {
+        "made_total": 16491,
+        "broken_total": 2874,
+        "made_per_episode": 82.455,
+        "broken_per_episode": 14.37,
+        "broken_rate": 0.1743,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 12.96,
+      "mean_episode_length_tokens": 18704.235
+    },
+    {
+      "cohort_index": 2,
+      "seed": "court-balance-v2:cohort-2",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 285,
+          "seat_win_rate": 0.475,
+          "normalized_victory_credit": 97.0333,
+          "share_of_victory_credit": 0.4852
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 309,
+          "seat_win_rate": 0.5159,
+          "normalized_victory_credit": 102.9667,
+          "share_of_victory_credit": 0.5148
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 113,
+          "win_rate": 0.565
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 125,
+          "win_rate": 0.625
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 75,
+          "win_rate": 0.375
+        },
+        "high_priest": {
+          "appearances": 111,
+          "wins": 63,
+          "win_rate": 0.5676
+        },
+        "master_of_coin": {
+          "appearances": 134,
+          "wins": 46,
+          "win_rate": 0.3433
+        },
+        "foreign_envoy": {
+          "appearances": 123,
+          "wins": 79,
+          "win_rate": 0.6423
+        },
+        "spymaster": {
+          "appearances": 112,
+          "wins": 42,
+          "win_rate": 0.375
+        },
+        "lover": {
+          "appearances": 119,
+          "wins": 51,
+          "win_rate": 0.4286
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 67,
+          "role_wins": 82,
+          "objective_success_rate": 0.335,
+          "role_win_rate": 0.41
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 52,
+          "role_wins": 83,
+          "objective_success_rate": 0.26,
+          "role_win_rate": 0.415
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 141,
+          "role_wins": 113,
+          "objective_success_rate": 0.705,
+          "role_win_rate": 0.565
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 159,
+          "role_wins": 106,
+          "objective_success_rate": 0.795,
+          "role_win_rate": 0.53
+        }
+      },
+      "commitments": {
+        "made_total": 16639,
+        "broken_total": 2906,
+        "made_per_episode": 83.195,
+        "broken_per_episode": 14.53,
+        "broken_rate": 0.1746,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 12.95,
+      "mean_episode_length_tokens": 18770.68
+    },
+    {
+      "cohort_index": 3,
+      "seed": "court-balance-v2:cohort-3",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 302,
+          "seat_win_rate": 0.5033,
+          "normalized_victory_credit": 101.5833,
+          "share_of_victory_credit": 0.5079
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 307,
+          "seat_win_rate": 0.5125,
+          "normalized_victory_credit": 98.4167,
+          "share_of_victory_credit": 0.4921
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 118,
+          "win_rate": 0.59
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 130,
+          "win_rate": 0.65
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 70,
+          "win_rate": 0.35
+        },
+        "foreign_envoy": {
+          "appearances": 121,
+          "wins": 76,
+          "win_rate": 0.6281
+        },
+        "spymaster": {
+          "appearances": 126,
+          "wins": 52,
+          "win_rate": 0.4127
+        },
+        "high_priest": {
+          "appearances": 119,
+          "wins": 73,
+          "win_rate": 0.6134
+        },
+        "master_of_coin": {
+          "appearances": 114,
+          "wins": 36,
+          "win_rate": 0.3158
+        },
+        "lover": {
+          "appearances": 119,
+          "wins": 54,
+          "win_rate": 0.4538
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 78,
+          "role_wins": 95,
+          "objective_success_rate": 0.39,
+          "role_win_rate": 0.475
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 55,
+          "role_wins": 83,
+          "objective_success_rate": 0.275,
+          "role_win_rate": 0.415
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 124,
+          "role_wins": 102,
+          "objective_success_rate": 0.62,
+          "role_win_rate": 0.51
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 160,
+          "role_wins": 120,
+          "objective_success_rate": 0.8,
+          "role_win_rate": 0.6
+        }
+      },
+      "commitments": {
+        "made_total": 16703,
+        "broken_total": 3035,
+        "made_per_episode": 83.515,
+        "broken_per_episode": 15.175,
+        "broken_rate": 0.1817,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 13.07,
+      "mean_episode_length_tokens": 18839.5
+    },
+    {
+      "cohort_index": 4,
+      "seed": "court-balance-v2:cohort-4",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 299,
+          "seat_win_rate": 0.4983,
+          "normalized_victory_credit": 98.7167,
+          "share_of_victory_credit": 0.4936
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 309,
+          "seat_win_rate": 0.5159,
+          "normalized_victory_credit": 101.2833,
+          "share_of_victory_credit": 0.5064
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 112,
+          "win_rate": 0.56
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 128,
+          "win_rate": 0.64
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 72,
+          "win_rate": 0.36
+        },
+        "foreign_envoy": {
+          "appearances": 123,
+          "wins": 70,
+          "win_rate": 0.5691
+        },
+        "spymaster": {
+          "appearances": 115,
+          "wins": 62,
+          "win_rate": 0.5391
+        },
+        "high_priest": {
+          "appearances": 124,
+          "wins": 77,
+          "win_rate": 0.621
+        },
+        "master_of_coin": {
+          "appearances": 122,
+          "wins": 46,
+          "win_rate": 0.377
+        },
+        "lover": {
+          "appearances": 115,
+          "wins": 41,
+          "win_rate": 0.3565
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 73,
+          "role_wins": 84,
+          "objective_success_rate": 0.365,
+          "role_win_rate": 0.42
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 35,
+          "role_wins": 87,
+          "objective_success_rate": 0.175,
+          "role_win_rate": 0.435
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 119,
+          "role_wins": 114,
+          "objective_success_rate": 0.595,
+          "role_win_rate": 0.57
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 156,
+          "role_wins": 110,
+          "objective_success_rate": 0.78,
+          "role_win_rate": 0.55
+        }
+      },
+      "commitments": {
+        "made_total": 17064,
+        "broken_total": 3017,
+        "made_per_episode": 85.32,
+        "broken_per_episode": 15.085,
+        "broken_rate": 0.1768,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 13.08,
+      "mean_episode_length_tokens": 19155.825
+    },
+    {
+      "cohort_index": 5,
+      "seed": "court-balance-v2:cohort-5",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 294,
+          "seat_win_rate": 0.49,
+          "normalized_victory_credit": 92.2,
+          "share_of_victory_credit": 0.461
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 342,
+          "seat_win_rate": 0.571,
+          "normalized_victory_credit": 107.8,
+          "share_of_victory_credit": 0.539
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 128,
+          "win_rate": 0.64
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 150,
+          "win_rate": 0.75
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 50,
+          "win_rate": 0.25
+        },
+        "high_priest": {
+          "appearances": 129,
+          "wins": 85,
+          "win_rate": 0.6589
+        },
+        "foreign_envoy": {
+          "appearances": 119,
+          "wins": 64,
+          "win_rate": 0.5378
+        },
+        "spymaster": {
+          "appearances": 117,
+          "wins": 53,
+          "win_rate": 0.453
+        },
+        "lover": {
+          "appearances": 113,
+          "wins": 60,
+          "win_rate": 0.531
+        },
+        "master_of_coin": {
+          "appearances": 121,
+          "wins": 46,
+          "win_rate": 0.3802
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 77,
+          "role_wins": 102,
+          "objective_success_rate": 0.385,
+          "role_win_rate": 0.51
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 56,
+          "role_wins": 91,
+          "objective_success_rate": 0.28,
+          "role_win_rate": 0.455
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 116,
+          "role_wins": 121,
+          "objective_success_rate": 0.58,
+          "role_win_rate": 0.605
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 157,
+          "role_wins": 106,
+          "objective_success_rate": 0.785,
+          "role_win_rate": 0.53
+        }
+      },
+      "commitments": {
+        "made_total": 16647,
+        "broken_total": 3020,
+        "made_per_episode": 83.235,
+        "broken_per_episode": 15.1,
+        "broken_rate": 0.1814,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 12.87,
+      "mean_episode_length_tokens": 18748.38
+    },
+    {
+      "cohort_index": 6,
+      "seed": "court-balance-v2:cohort-6",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 312,
+          "seat_win_rate": 0.52,
+          "normalized_victory_credit": 101.1833,
+          "share_of_victory_credit": 0.5059
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 312,
+          "seat_win_rate": 0.5209,
+          "normalized_victory_credit": 98.8167,
+          "share_of_victory_credit": 0.4941
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 122,
+          "win_rate": 0.61
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 130,
+          "win_rate": 0.65
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 70,
+          "win_rate": 0.35
+        },
+        "foreign_envoy": {
+          "appearances": 114,
+          "wins": 66,
+          "win_rate": 0.5789
+        },
+        "spymaster": {
+          "appearances": 123,
+          "wins": 61,
+          "win_rate": 0.4959
+        },
+        "master_of_coin": {
+          "appearances": 112,
+          "wins": 41,
+          "win_rate": 0.3661
+        },
+        "lover": {
+          "appearances": 115,
+          "wins": 53,
+          "win_rate": 0.4609
+        },
+        "high_priest": {
+          "appearances": 135,
+          "wins": 81,
+          "win_rate": 0.6
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 83,
+          "role_wins": 92,
+          "objective_success_rate": 0.415,
+          "role_win_rate": 0.46
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 50,
+          "role_wins": 88,
+          "objective_success_rate": 0.25,
+          "role_win_rate": 0.44
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 125,
+          "role_wins": 125,
+          "objective_success_rate": 0.625,
+          "role_win_rate": 0.625
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 158,
+          "role_wins": 117,
+          "objective_success_rate": 0.79,
+          "role_win_rate": 0.585
+        }
+      },
+      "commitments": {
+        "made_total": 16719,
+        "broken_total": 3016,
+        "made_per_episode": 83.595,
+        "broken_per_episode": 15.08,
+        "broken_rate": 0.1804,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 12.91,
+      "mean_episode_length_tokens": 18857.9
+    },
+    {
+      "cohort_index": 7,
+      "seed": "court-balance-v2:cohort-7",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 280,
+          "seat_win_rate": 0.4667,
+          "normalized_victory_credit": 88.9167,
+          "share_of_victory_credit": 0.4446
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 332,
+          "seat_win_rate": 0.5543,
+          "normalized_victory_credit": 111.0833,
+          "share_of_victory_credit": 0.5554
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 121,
+          "win_rate": 0.605
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 135,
+          "win_rate": 0.675
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 65,
+          "win_rate": 0.325
+        },
+        "high_priest": {
+          "appearances": 136,
+          "wins": 89,
+          "win_rate": 0.6544
+        },
+        "lover": {
+          "appearances": 123,
+          "wins": 54,
+          "win_rate": 0.439
+        },
+        "foreign_envoy": {
+          "appearances": 116,
+          "wins": 60,
+          "win_rate": 0.5172
+        },
+        "spymaster": {
+          "appearances": 118,
+          "wins": 51,
+          "win_rate": 0.4322
+        },
+        "master_of_coin": {
+          "appearances": 106,
+          "wins": 37,
+          "win_rate": 0.3491
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 76,
+          "role_wins": 97,
+          "objective_success_rate": 0.38,
+          "role_win_rate": 0.485
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 45,
+          "role_wins": 101,
+          "objective_success_rate": 0.225,
+          "role_win_rate": 0.505
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 119,
+          "role_wins": 103,
+          "objective_success_rate": 0.595,
+          "role_win_rate": 0.515
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 152,
+          "role_wins": 99,
+          "objective_success_rate": 0.76,
+          "role_win_rate": 0.495
+        }
+      },
+      "commitments": {
+        "made_total": 16756,
+        "broken_total": 3055,
+        "made_per_episode": 83.78,
+        "broken_per_episode": 15.275,
+        "broken_rate": 0.1823,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 13.055,
+      "mean_episode_length_tokens": 18862.65
+    },
+    {
+      "cohort_index": 8,
+      "seed": "court-balance-v2:cohort-8",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 294,
+          "seat_win_rate": 0.49,
+          "normalized_victory_credit": 96.8,
+          "share_of_victory_credit": 0.484
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 311,
+          "seat_win_rate": 0.5192,
+          "normalized_victory_credit": 103.2,
+          "share_of_victory_credit": 0.516
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 128,
+          "win_rate": 0.64
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 143,
+          "win_rate": 0.715
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 57,
+          "win_rate": 0.285
+        },
+        "foreign_envoy": {
+          "appearances": 115,
+          "wins": 73,
+          "win_rate": 0.6348
+        },
+        "master_of_coin": {
+          "appearances": 118,
+          "wins": 35,
+          "win_rate": 0.2966
+        },
+        "lover": {
+          "appearances": 113,
+          "wins": 50,
+          "win_rate": 0.4425
+        },
+        "high_priest": {
+          "appearances": 122,
+          "wins": 71,
+          "win_rate": 0.582
+        },
+        "spymaster": {
+          "appearances": 131,
+          "wins": 48,
+          "win_rate": 0.3664
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 66,
+          "role_wins": 88,
+          "objective_success_rate": 0.33,
+          "role_win_rate": 0.44
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 43,
+          "role_wins": 99,
+          "objective_success_rate": 0.215,
+          "role_win_rate": 0.495
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 127,
+          "role_wins": 99,
+          "objective_success_rate": 0.635,
+          "role_win_rate": 0.495
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 149,
+          "role_wins": 100,
+          "objective_success_rate": 0.745,
+          "role_win_rate": 0.5
+        }
+      },
+      "commitments": {
+        "made_total": 16837,
+        "broken_total": 2889,
+        "made_per_episode": 84.185,
+        "broken_per_episode": 14.445,
+        "broken_rate": 0.1716,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 12.955,
+      "mean_episode_length_tokens": 18876.96
+    },
+    {
+      "cohort_index": 9,
+      "seed": "court-balance-v2:cohort-9",
+      "episodes": 200,
+      "win_rate_by_disposition": {
+        "machiavellian": {
+          "appearances": 600,
+          "winning_seats": 307,
+          "seat_win_rate": 0.5117,
+          "normalized_victory_credit": 97.8833,
+          "share_of_victory_credit": 0.4894
+        },
+        "coalition": {
+          "appearances": 599,
+          "winning_seats": 315,
+          "seat_win_rate": 0.5259,
+          "normalized_victory_credit": 102.1167,
+          "share_of_victory_credit": 0.5106
+        }
+      },
+      "win_rate_by_role": {
+        "monarch": {
+          "appearances": 200,
+          "wins": 131,
+          "win_rate": 0.655
+        },
+        "heir": {
+          "appearances": 200,
+          "wins": 136,
+          "win_rate": 0.68
+        },
+        "rival": {
+          "appearances": 200,
+          "wins": 64,
+          "win_rate": 0.32
+        },
+        "spymaster": {
+          "appearances": 114,
+          "wins": 50,
+          "win_rate": 0.4386
+        },
+        "high_priest": {
+          "appearances": 131,
+          "wins": 79,
+          "win_rate": 0.6031
+        },
+        "foreign_envoy": {
+          "appearances": 119,
+          "wins": 69,
+          "win_rate": 0.5798
+        },
+        "lover": {
+          "appearances": 122,
+          "wins": 48,
+          "win_rate": 0.3934
+        },
+        "master_of_coin": {
+          "appearances": 113,
+          "wins": 45,
+          "win_rate": 0.3982
+        }
+      },
+      "archetype_results": {
+        "broker": {
+          "appearances": 200,
+          "objective_successes": 65,
+          "role_wins": 91,
+          "objective_success_rate": 0.325,
+          "role_win_rate": 0.455
+        },
+        "guarantor": {
+          "appearances": 200,
+          "objective_successes": 46,
+          "role_wins": 88,
+          "objective_success_rate": 0.23,
+          "role_win_rate": 0.44
+        },
+        "auditor": {
+          "appearances": 200,
+          "objective_successes": 134,
+          "role_wins": 117,
+          "objective_success_rate": 0.67,
+          "role_win_rate": 0.585
+        },
+        "veto_holder": {
+          "appearances": 200,
+          "objective_successes": 160,
+          "role_wins": 110,
+          "objective_success_rate": 0.8,
+          "role_win_rate": 0.55
+        }
+      },
+      "commitments": {
+        "made_total": 16610,
+        "broken_total": 2944,
+        "made_per_episode": 83.05,
+        "broken_per_episode": 14.72,
+        "broken_rate": 0.1772,
+        "target_band": [
+          0.15,
+          0.4
+        ]
+      },
+      "mean_episode_turn_records": 12.93,
+      "mean_episode_length_tokens": 18760.455
+    }
+  ]
+}

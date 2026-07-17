@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["situation_summary", "rationale_summary", "evidence", "forecasts", "coalition_assessment", "counterfactuals", "public_message", "private_messages", "commitments", "action"],
+  "properties": {
+    "situation_summary": { "type": "string", "minLength": 300, "maxLength": 1800 },
+    "rationale_summary": { "type": "string", "minLength": 400, "maxLength": 1800 },
+    "evidence": { "type": "array", "minItems": 3, "maxItems": 7, "items": { "type": "string", "maxLength": 400 } },
+    "forecasts": {
+      "type": "array", "minItems": 2, "maxItems": 4,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["event", "probability", "horizon_turn", "evidence"],
+        "properties": {
+          "event": { "type": "string", "maxLength": 500 },
+          "probability": { "type": "number", "minimum": 0, "maximum": 1 },
+          "horizon_turn": { "type": "integer", "minimum": 1, "maximum": 32 },
+          "evidence": { "type": "string", "maxLength": 500 }
+        }
+      }
+    },
+    "coalition_assessment": {
+      "type": "array", "minItems": 3, "maxItems": 7,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["seat", "trust", "threat", "leverage", "next_test"],
+        "properties": {
+          "seat": { "type": "string" },
+          "trust": { "type": "number", "minimum": 0, "maximum": 1 },
+          "threat": { "type": "number", "minimum": 0, "maximum": 1 },
+          "leverage": { "type": "string", "maxLength": 500 },
+          "next_test": { "type": "string", "maxLength": 500 }
+        }
+      }
+    },
+    "counterfactuals": {
+      "type": "array", "minItems": 2, "maxItems": 3,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["action", "likely_outcome", "upside", "risk"],
+        "properties": {
+          "action": { "type": "string", "maxLength": 500 },
+          "likely_outcome": { "type": "string", "maxLength": 700 },
+          "upside": { "type": "number", "minimum": -10, "maximum": 10 },
+          "risk": { "type": "number", "minimum": 0, "maximum": 10 }
+        }
+      }
+    },
+    "public_message": { "type": "string", "maxLength": 1200 },
+    "private_messages": {
+      "type": "array", "maxItems": 3,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["to", "text"],
+        "properties": { "to": { "type": "string" }, "text": { "type": "string", "maxLength": 1200 } }
+      }
+    },
+    "commitments": {
+      "type": "array", "maxItems": 3,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["to", "kind", "content", "deadline_turn", "mode", "candidate", "action_type", "target"],
+        "properties": {
+          "to": { "type": "string" },
+          "kind": { "enum": ["support", "non_aggression", "information", "resource", "marriage", "vote"] },
+          "content": { "type": "string", "maxLength": 400 },
+          "deadline_turn": { "type": "integer", "minimum": 1, "maximum": 32 },
+          "mode": { "enum": ["required", "forbidden"] },
+          "candidate": { "type": ["string", "null"] },
+          "action_type": { "type": ["string", "null"] },
+          "target": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "action": {
+      "type": "object", "additionalProperties": false,
+      "required": ["type", "candidate", "target", "partner", "co_conspirator", "secret_id", "against", "compact_id", "party_a", "party_b", "commitment_id", "rumor_id"],
+      "properties": {
+        "type": { "type": "string" },
+        "candidate": { "type": ["string", "null"] },
+        "target": { "type": ["string", "null"] },
+        "partner": { "type": ["string", "null"] },
+        "co_conspirator": { "type": ["string", "null"] },
+        "secret_id": { "type": ["string", "null"] },
+        "against": { "type": ["string", "null"] },
+        "compact_id": { "type": ["string", "null"] },
+        "party_a": { "type": ["string", "null"] },
+        "party_b": { "type": ["string", "null"] },
+        "commitment_id": { "type": ["string", "null"] },
+        "rumor_id": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

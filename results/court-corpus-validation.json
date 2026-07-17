@@ -1,0 +1,145 @@
+{
+  "archetype_x_seat_coverage": {
+    "court:foreign_envoy": {
+      "auditor": 15,
+      "broker": 22,
+      "guarantor": 17,
+      "none": 43,
+      "veto_holder": 24
+    },
+    "court:heir": {
+      "auditor": 50,
+      "broker": 33,
+      "guarantor": 34,
+      "none": 49,
+      "veto_holder": 34
+    },
+    "court:high_priest": {
+      "auditor": 7,
+      "broker": 14,
+      "guarantor": 22,
+      "none": 56,
+      "veto_holder": 18
+    },
+    "court:lover": {
+      "auditor": 21,
+      "broker": 23,
+      "guarantor": 18,
+      "none": 33,
+      "veto_holder": 25
+    },
+    "court:master_of_coin": {
+      "auditor": 21,
+      "broker": 20,
+      "guarantor": 19,
+      "none": 38,
+      "veto_holder": 18
+    },
+    "court:monarch": {
+      "auditor": 24,
+      "broker": 42,
+      "guarantor": 43,
+      "none": 66,
+      "veto_holder": 25
+    },
+    "court:rival": {
+      "auditor": 42,
+      "broker": 25,
+      "guarantor": 25,
+      "none": 83,
+      "veto_holder": 25
+    },
+    "court:spymaster": {
+      "auditor": 20,
+      "broker": 21,
+      "guarantor": 22,
+      "none": 31,
+      "veto_holder": 31
+    }
+  },
+  "coverage_gaps": [],
+  "disposition_x_archetype_coverage": {
+    "court:auditor": {
+      "coalition": 100,
+      "machiavellian": 100
+    },
+    "court:broker": {
+      "coalition": 100,
+      "machiavellian": 100
+    },
+    "court:guarantor": {
+      "coalition": 100,
+      "machiavellian": 100
+    },
+    "court:none": {
+      "coalition": 199,
+      "machiavellian": 200
+    },
+    "court:veto_holder": {
+      "coalition": 100,
+      "machiavellian": 100
+    }
+  },
+  "disposition_x_seat_coverage": {
+    "court:foreign_envoy": {
+      "coalition": 56,
+      "machiavellian": 65
+    },
+    "court:heir": {
+      "coalition": 100,
+      "machiavellian": 100
+    },
+    "court:high_priest": {
+      "coalition": 53,
+      "machiavellian": 64
+    },
+    "court:lover": {
+      "coalition": 60,
+      "machiavellian": 60
+    },
+    "court:master_of_coin": {
+      "coalition": 58,
+      "machiavellian": 58
+    },
+    "court:monarch": {
+      "coalition": 100,
+      "machiavellian": 100
+    },
+    "court:rival": {
+      "coalition": 100,
+      "machiavellian": 100
+    },
+    "court:spymaster": {
+      "coalition": 72,
+      "machiavellian": 53
+    }
+  },
+  "episodes": 200,
+  "errors": [],
+  "files": 1,
+  "ok": true,
+  "per_env": {
+    "court": {
+      "appearances_by_disposition": {
+        "coalition": 599,
+        "machiavellian": 600
+      },
+      "broken_commitment_rate": 0.1533,
+      "commitments_broken": 2576,
+      "commitments_made": 16808,
+      "episodes": 200,
+      "tokens": 3753256,
+      "win_rates_by_disposition": {
+        "coalition": 0.5476,
+        "machiavellian": 0.5067
+      },
+      "wins_by_disposition": {
+        "coalition": 328,
+        "machiavellian": 304
+      }
+    }
+  },
+  "token_counter": "tiktoken:cl100k_base",
+  "tokens": 3753256,
+  "warnings": []
+}
